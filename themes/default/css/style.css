@@ -1,0 +1,378 @@
+/********基本定义********/
+body, 
+h1, h2, h3, h4, h5, h6, hr, p, blockquote,
+dl, dt, dd, th, td,
+ul, ol, li,
+pre, form, fieldset,legend, button, input, textarea
+{
+    margin:0;
+    padding:0
+}
+
+/****字体定义****/
+body, 
+button, input, select, textarea
+{
+    font:12px/1.5 tahoma,arial,simsun    
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 100%
+}
+
+address, cite, dfn, em, var
+{
+    font-style: normal;
+}
+
+code, kbd, pre, samp
+{
+    font-family:courier new,courier,monospace;
+}
+
+small{
+    font-size: 12px;
+}
+
+/****列表属性****/
+ul, ol
+{
+    list-style: none;
+}
+
+/****上标下标****/
+sup
+{
+    vertical-align: text-top;
+}
+
+sub
+{
+    vertical-align: text-bottom;
+}
+
+/****Form定义****/
+legend
+{
+    color: #000;
+}
+
+fieldset, img
+{
+    border: 0;
+}
+
+button, input, select, textarea
+{
+    font-size: 100%;
+}
+
+table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+address
+{
+    font-style: italic;
+}
+
+/****超链接定义****/
+a{
+color:#2C6288;
+text-decoration:none;
+outline:none;
+}
+
+a:hover{
+color:#333;
+font-weight: bold;
+text-decoration:none
+}
+
+h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, #secnav a
+{
+    
+}
+
+h4, h5, h6
+{
+    font: bold 1.15em/1.5 verdana;
+    padding:0;
+    margin:5em 0;
+}
+
+/********页面定义********/
+body
+{
+    background:#daf4ec;
+    color:#333;
+    font:14px/1.5 "\5FAE\8F6F\96C5\9ED1",helvetica,Arial;
+    margin:0;
+    padding:0
+}
+
+.clearfix
+{
+    display: inline-block;
+}
+
+* html .clearfix
+{
+    height: 1%;
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#header, #head_nav, #container, #footer
+{
+    text-align: center;
+}
+
+#header .inner,#head_nav .inner,#container .inner,#footer .inner{
+margin:0 auto;
+width:auto;
+max-width:1240px;
+width:auto;
+_width:1020px;
+text-align:left;
+}
+
+/********页头定义********/
+#header
+{
+    height: auto;
+    background: #33be40 none no-repeat top left\9;
+    /*适用FF*/
+    background: -moz-linear-gradient(top, rgba(139,255,153,0.91) 0%, rgba(248,248,248,0.9) 100%);
+    /*适用低版本safari和chrome*/
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(139,255,153,0.9)), color-stop(100%, rgba(248,248,248,0.9)));
+    /*适用safari5+和chrome10+*/
+    background: -webkit-linear-gradient(top, rgba(139,255,153,0.9) 0%, rgba(248,248,248,0.9) 100%);
+    /*适用Opera浏览器*/
+    background: -o-linear-gradient(top, rgba(139,255,153,0.9) 0%, rgba(248,248,248,0.9) 100%);
+    /*适用IE10+浏览器*/
+    background: -ms-linear-gradient(top, rgba(139,255,153,0.9) 0%, rgba(248,0,0,0.9) 100%);
+    /*W3C标准*/
+    /*background: linear-gradient(to bottom, rgba(248,248,248,0.9) 0%, rgba(139,255,153,0.9) 100%);*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8bff99', endColorstr='#EEEEEE', GradientType=0 );*/
+}
+
+#header .inner
+{
+    height: 108px;
+    overflow: hidden;
+}
+
+#logo
+{
+    padding:10px;
+    width: 750px;
+    height: 80px;
+    font-size: 35px;
+    color: #215674;
+    text-shadow: 1px 1px 0 #000, 1px 1px 5px rgba(255, 255, 255, 0.8);
+}
+
+#note
+{
+    height: 35px;
+    font-size:25px;
+    color: #344357;
+}
+
+#head_nav
+{
+    height:35px;
+    background:#dcdcdc;
+    background:-moz-linear-gradient(top,#fffefe 0,#dcdcdc 100%);
+    background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#fffefe),color-stop(100%,#dcdcdc));
+    background:-webkit-linear-gradient(top,#fffefe 0,#dcdcdc 100%);
+    background:-o-linear-gradient(top,#fffefe 0,#dcdcdc 100%);
+    background:-ms-linear-gradient(top,#fffefe 0,#dcdcdc 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffefe',endColorstr='#dcdcdc',GradientType=0);
+    background:linear-gradient(top,#fffefe 0,#dcdcdc 100%)
+}
+
+#head_nav .inner
+{
+    position: relative;
+    z-index: 100;
+    overflow: visible;
+}
+
+#head_nav ul
+{
+    list-style: none;
+}
+
+#head_nav ul li
+{
+    float: left;
+    position: relative;
+    width: 140px;
+    height: 35px;
+    color: #333;
+    line-height: 35px;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    text-align: center;
+}
+
+#head_nav ul ul
+{
+    visibility: hidden;
+    position:absolute;
+    top: 35px;
+}
+
+#head_nav table 
+{
+    position:absolute; 
+    top:0; 
+    left:0;
+} 
+
+#head_nav ul li:hover ul,
+#head_nav ul a:hover ul
+{ 
+    visibility: visible !important;
+}
+
+#head_nav a
+{
+    display:block;
+    font-size: 15px;
+}
+
+#head_nav a:hover
+{
+    font-size: 16px;
+    background: #33be40;
+    
+    border-radius: 5px;
+}
+#head_nav ul ul li {
+    clear:both;
+    height: 35px;
+    line-height:35px;
+    text-align:center;
+    border-radius: 5px;
+    background:#fffefe;
+    background:-moz-linear-gradient(top,#fffefe 0,#dcdcdc 100%);
+    background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#fffefe),color-stop(100%,#dcdcdc));
+    background:-webkit-linear-gradient(top,#fffefe 0,#dcdcdc 100%);
+    background:-o-linear-gradient(top,#fffefe 0,#dcdcdc 100%);
+    background:-ms-linear-gradient(top,#fffefe 0,#dcdcdc 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffefe',endColorstr='#dcdcdc',GradientType=0);
+    background:linear-gradient(top,#fffefe 0,#dcdcdc 100%)
+} 
+
+#head_nav .nav_sep
+{
+    height: 30px!important;
+    padding: 5px 0 0 0;
+    width: 2px!important;
+    background: url("../images/nav_sep.png") no-repeat 0 9px;
+}
+
+/*轮播模块*/
+#carousel { width: 100%; position: relative; padding-top: 5px; height: 410px;}
+#carousel .bd { margin: 0 auto; position: relative; z-index: 0; overflow: hidden; }
+#carousel .bd ul { width: 100% !important; }
+#carousel .bd li { width: 100% !important; height: 410px; overflow: hidden; text-align: center; }
+#carousel .bd li a { display: block; height: 410px; }
+#carousel .hd { width: 100%; position: absolute; z-index: 1; bottom: 0; left: 0; height: 30px; line-height: 30px; }
+#carousel .hd ul { text-align: center; }
+#carousel .hd ul li { cursor: pointer; display: inline-block; *display:inline; zoom: 1; width: 42px; height: 11px; margin: 1px; overflow: hidden; background: #000; filter: alpha(opacity=50); opacity: 0.5; line-height: 999px; }
+#carousel .hd ul .on { background: #f00; }
+#carousel .prev, #carousel .next { display: block; position: absolute; z-index: 1; top: 50%; margin-top: -30px; left: 15%; z-index: 1; width: 40px; height: 60px; background: url(../images/slider-arrow.png) -126px -137px #000 no-repeat; cursor: pointer; filter: alpha(opacity=50); opacity: 0.5; display: none; }
+#carousel .next { left: auto; right: 15%; background-position: -6px -137px; }
+
+/*Container模块*/
+#container .module { 
+    min-height: 300px; 
+    background: transparent;
+    margin:0px;
+    padding:0px;
+    padding-top: 30px;
+    width:100%;
+}
+
+#container .module .moduleBox { 
+    border-radius: 5px; 
+    min-height: 290px; 
+    margin-right: 15px; 
+    float: left; 
+}
+
+#container .module .about{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    width:33%;
+    margin-right:20px;
+}
+
+#container .module .post{
+    margin: 0px;
+    padding: 0px;
+    width: 65%;
+    float: left;
+}
+
+#container h2
+{
+    display: inline;
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+}
+
+#container .col a
+{
+    float: right;
+}
+
+#container .col small
+{
+    font-family: Arial,sans-serif;
+    color: #777;
+}
+
+.col{ 
+    height: 35px; 
+    line-height: 35px; 
+    margin-bottom: 5px;
+    padding-left:10px;
+    padding-right:10px;
+    border-radius: 10px;
+    background: #33be40;
+/*    border-bottom: 1px solid #E4E4E4; 
+    background: rgba(139,255,153,0.9);
+    background: -moz-linear-gradient(top, rgba(139,255,153,0.91) 0%, rgba(248,248,248,0.9) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(139,255,153,0.9)), color-stop(100%, rgba(248,248,248,0.9)));
+    background: -webkit-linear-gradient(top, rgba(139,255,153,0.9) 0%, rgba(248,248,248,0.9) 100%);
+    background: -o-linear-gradient(top, rgba(139,255,153,0.9) 0%, rgba(248,248,248,0.9) 100%);
+    background: -ms-linear-gradient(top, rgba(139,255,153,0.9) 0%, rgba(248,0,0,0.9) 100%);
+    background: linear-gradient(to bottom, rgba(139,255,153,0.9) 0%, rgba(248,248,248,0.9) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8bff99', endColorstr='#EEEEEE', GradientType=0 );*/
+}
+
+.con
+{
+    padding: 10px;
+    height: 220px;
+    border-radius: 10px;
+    /*background: rgba(139,255,153,0.4);*/
+    background:rgba(220,220,220,0.4);;
+}
+

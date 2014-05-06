@@ -1,0 +1,176 @@
+/**CSS DEFINITION FILE**/
+
+/**Basic Definition**/
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{
+margin:0;
+padding:0
+}
+
+body,button,input,select,textarea{
+font:12px/1.5 tahoma,arial,simsun
+}
+
+h1,h2,h3,h4,h5,h6{
+font-size:100%
+}
+
+address,cite,dfn,em,var{
+font-style:normal
+}
+
+code,kbd,pre,samp{
+font-family:courier new,courier,monospace
+}
+
+small{
+font-size:12px
+}
+
+ul,ol{
+list-style:none
+}
+
+/*上标和下标*/
+sup{
+vertical-align:text-top
+}
+
+sub{
+vertical-align:text-bottom
+}
+
+legend{
+color:#000
+}
+
+fieldset,img{
+border:0
+}
+
+button,input,select,textarea{
+font-size:100%
+}
+
+table{
+border-collapse:collapse;
+border-spacing:0
+}
+
+address{
+font-style:italic
+}
+
+hr{
+color:#fff;
+border-top:1px dotted #D3D3D3;
+height:5px;
+margin:10px 0;
+border:0
+}
+
+blockquote{
+color:#666;
+margin:0 0 0 25px;
+padding:8px 25px 8px 10px;
+font-size:15px;
+border-left:5px solid #aaa
+}
+
+blockquote p{
+margin:0 0 10px;
+padding:0
+}
+
+a{
+color:#2C6288;
+text-decoration:none;
+outline:none
+}
+
+a:hover{
+color:#333;
+text-decoration:underline
+}
+
+h1{
+font:bold 28px/1.5 "\5FAE\8F6F\96C5\9ED1",Arial,verdana
+}
+
+h2{
+font:bold 24px/1.5 "\5FAE\8F6F\96C5\9ED1",Arial,verdana;
+padding:10px 0;margin:0
+}
+
+h2.h1{
+font:bold 28px/1.3 "\5FAE\8F6F\96C5\9ED1",Arial
+}
+
+h2.archive{
+margin:20px 0
+}
+
+h2 a,h2 a:visited{
+color:#2C6288;
+text-decoration:none
+}
+
+h2 a:hover{
+color:#666;
+text-decoration:underline
+}
+
+h3{
+font:bold 22px "\5FAE\8F6F\96C5\9ED1",Arial,verdana;
+margin:.5em 0
+}
+
+h3 a,h3 a:visited{
+text-decoration:none
+}
+
+h1,h1 a,h2,h2 a,h3,h3 a,h4,h4 a,{
+color:#333;
+text-shadow:rgba(50,50,50,.3) 1px 1px 3px
+}
+
+h4,h5,h6{
+font:bold 1.15em/1.5 verdana;
+padding:0;
+margin:.5em 0
+}
+
+/**body definition**/
+body{
+background:#a9b5bd;
+color:#333;
+font:14px/1.5 "\5FAE\8F6F\96C5\9ED1",helvetica,Arial;
+margin:0;
+padding:0
+}
+
+/**clear definition**/
+.clearfix:after{
+clear:both;
+content:'.';
+display:block;
+visibility:hidden;
+height:0
+}
+
+.clearfix{
+display:inline-block
+}
+
+* html .clearfix{
+height:1%
+}
+
+.clearfix{
+display:block
+}
+
+/**HyperLink Definition**/
+
+
+
+
